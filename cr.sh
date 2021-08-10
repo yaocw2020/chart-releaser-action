@@ -250,7 +250,7 @@ release_charts() {
     fi
 
     echo 'Releasing charts...'
-    cr upload "${args[@]}"
+    cr upload "${args[@]}" --skip-existing 
 }
 
 update_index() {
